@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kasir Restoran Desfa</title>
+    <style>
+      /* CSS untuk styling */
+      /* CSS untuk styling yang lebih berwarna pink dan menarik */
+      /* CSS untuk styling dengan latar belakang yang menarik */
+      /* CSS untuk styling dengan latar belakang yang lucu dan menarik */
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-image: url("https://i.ibb.co/YPc2G2h/background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .menu-item {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+      }
+
+      select,
+      input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #ff6b6b;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #ff4757;
+      }
+
+      h2 {
+        margin-top: 30px;
+        color: #333;
+      }
+
+      #pesanan-list {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      #pesanan-list li {
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #ffeaa7;
+        border-radius: 4px;
+      }
+
+      #total-harga {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2ecc71;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #3498db;
+        border-radius: 4px;
+        color: #fff;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: linear-gradient(135deg, #fd79a8, #ff6b81);
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+
+      .menu-item {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+      }
+
+      select,
+      input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #ff6b81;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #ff4757;
+      }
+
+      h2 {
+        margin-top: 30px;
+        color: #fff;
+      }
+
+      #pesanan-list {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      #pesanan-list li {
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #ffcccb;
+        border-radius: 4px;
+      }
+
+      #total-harga {
+        font-size: 24px;
+        font-weight: bold;
+        color: #f30f0f;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #000000;
+        border-radius: 4px;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        color: #ff6b81;
+        margin-bottom: 20px;
+      }
+
+      .menu-item {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+      }
+
+      select,
+      input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #fd79a8;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #ff4757;
+      }
+
+      h2 {
+        margin-top: 30px;
+        color: #ff6b81;
+      }
+
+      #pesanan-list {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      #pesanan-list li {
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #ffcccb;
+        border-radius: 4px;
+      }
+
+      #total-harga {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #ff6b81;
+        border-radius: 4px;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      .menu-item {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+      }
+
+      select,
+      input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #ff6b6b;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #ff4757;
+      }
+
+      h2 {
+        margin-top: 30px;
+        color: #333;
+      }
+
+      #pesanan-list {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      #pesanan-list li {
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #ffeaa7;
+        border-radius: 4px;
+      }
+
+      #total-harga {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2ecc71;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kasir Restoran Desfa</h1>
+
+      <div class="menu-item">
+        <label for="menu">Pilih Menu:</label>
+        <select id="menu">
+          <option value="Chiken Steak">Chiken Steak - Rp 30,000</option>
+          <option value="Salad Buah">Salad Buah - Rp 22,000</option>
+          <option value="Kentang Goreng">Kentang Goreng - Rp 20,000</option>
+          <option value="Spaghetii">Spaghetti - Rp 35,000</option>
+          <option value="Pizza">Pizza - Rp 55,000</option>
+          <option value="Burger Double Cheese">
+            Burger Double Cheese - Rp 35,000
+          </option>
+          <option value="Jus Mangga">Jus Mangga - Rp 20,000</option>
+          <option value="Jus Stroberi">Jus Stroberi - Rp 20,000</option>
+          <option value="Jus Alpukat">Jus Alpukat - Rp 20,000</option>
+          <option value="Jus Jambu">Jus Jambu - Rp 20,000</option>
+        </select>
+      </div>
+
+      <div class="menu-item">
+        <label for="jumlah">Jumlah:</label>
+        <input type="number" id="jumlah" min="1" value="1" />
+      </div>
+
+      <button onclick="tambahPesanan()">Tambah Pesanan</button>
+
+      <h2>Pesanan Anda:</h2>
+      <ul id="pesanan-list"></ul>
+
+      <h2>Total Harga:</h2>
+      <div id="total-harga">Rp 0</div>
+    </div>
+
+    <script>
+      // Fungsi untuk menambahkan pesanan
+      function tambahPesanan() {
+        var menuSelect = document.getElementById("menu");
+        var selectedMenu = menuSelect.options[menuSelect.selectedIndex].text;
+        var jumlah = parseInt(document.getElementById("jumlah").value);
+        var pesananList = document.getElementById("pesanan-list");
+        var totalHargaElement = document.getElementById("total-harga");
+        var harga = parseInt(selectedMenu.match(/\d+/)[0]); // Mengambil harga dari teks opsi menu
+
+        // Membuat elemen li untuk menampilkan pesanan
+        var li = document.createElement("li");
+        li.textContent = selectedMenu + " x " + jumlah;
+
+        // Menambahkan pesanan ke daftar pesanan
+        pesananList.appendChild(li);
+
+        // Menghitung total harga
+        var totalHarga = parseInt(
+          totalHargaElement.textContent.replace(/\D/g, "")
+        ); // Mengambil total harga tanpa tanda
+        totalHarga += harga * jumlah;
+        totalHargaElement.textContent = "Rp " + formatRupiah(totalHarga);
+      }
+
+      // Fungsi untuk memformat angka menjadi format rupiah
+      function formatRupiah(angka) {
+        var reverse = angka.toString().split("").reverse().join("");
+        var ribuan = reverse.match(/\d{1,3}/g);
+        var hasil = ribuan.join(".").split("").reverse().join("");
+        return hasil;
+      }
+    </script>
+  </body>
+</html>
